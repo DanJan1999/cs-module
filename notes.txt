@@ -1,0 +1,30 @@
+The initial resulting times were as follows,
+
+extralargearray:
+insert took 5.203.... seconds to complete. Very long.
+append took only 2.56 milliseconds to complete. Much more manageable.
+
+Results for tiny array:
+insert: 19.916 us, I don't even know what thaat symbol means but it was less than milliseconds.
+append: 52.625 us, same symbol. It actually took slightly longer, however, we're talking such
+small times that it really doesn't make much of a difference.
+
+Results for small array:
+insert: 25.959 us again we're dealing with such a small time it doesn't make a difference but we do see that time has increased slightly.
+append: 61.042 us
+
+Results for Medium array:
+insert: 132.958 us
+append: 91.625 us
+Here is where we see the crossover event that makes the append method faster. It is still such small numbers but we see that in between the size of arrays
+that small and medium sized arrays contain, one method of doing things becomes faster and more efficient.
+
+
+Results for large array:
+insert: 6.459... ms
+append: 463.208 us 
+
+At this point it is now more obvious that the append method has become more efficient at dealing with this amount of data. 
+Again, we are only dealing in milliseconds however, across thousands of lines of code and dealing with
+thousands upon thousands of datapints, it adds up. This pattern of seeing one method start out faster with small amounts of data but being beat when dealing
+with large amounts of data illustrates the importance of choosing methods that make the most sense when dealing with large amounts of data.
