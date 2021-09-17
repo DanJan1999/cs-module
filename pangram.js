@@ -21,6 +21,6 @@ let resultsInsert = perf.stop();
 
 console.log("Pangram runtime", resultsInsert.preciseWords);
 
-// Initial Pangram runtime test = 4.163... ms
-// Second Pangram runtime test = 3.7395 ms
+// Initial Pangram runtime test  "The quick brown fox jumps over the lazy dog." = 4.163... ms
+// Second Pangram runtime test "Watch "Jeopardy!", Alex Trebek's fun TV quiz game." = 3.7395 ms
 // Last Pangram runtime test = 4.43875 ms
